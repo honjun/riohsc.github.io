@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>RioHsc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Sharing technology">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RioHsc">
+<meta property="og:url" content="https://riohsc.github.io/index.html">
+<meta property="og:site_name" content="RioHsc">
+<meta property="og:description" content="Sharing technology">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RioHsc">
+<meta name="twitter:description" content="Sharing technology">
+  
+    <link rel="alternate" href="/atom.xml" title="RioHsc" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">RioHsc</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Sharing technology</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://riohsc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-u" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/u.html" class="article-date">
+  <time datetime="2018-06-11T16:40:06.000Z" itemprop="datePublished">2018-06-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/日常/">日常</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/u.html">自言自语</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script src=/js/crypto-js.js></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">U2FsdGVkX1/PYIXeLuLKYCXgX71iD1A8INR14EyU9I7eK/puE5JZ7qB5Y519Dk3lZtBsFEdXiqe2D8W/fmR6XxXK96cvcSWwuNi1JVRqXgnbCUNPFKWD/ucD3H6uNrz5elu2lhUnm4txF5dxnSIrfgRqkY4iQ5J8xmYPR/Wg3AkUykUIl48CQ/3AtbZoWlLWWlYeP0Wg0Yli7jzeMD4FJezM3S6IEO3zCqMTyqasLmmuePAIXCxnd0e1cVlaiNs3soakPLR/JfOBmFQ9tWn63Mlz2Ur94edUnBs7l+T7doHkcf0k8efxOmg3OSFFHpdJ/iEPZB6lGC8LxhOaGBY89g==</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="查&nbsp;看" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #2E7D32;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "密码错误!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/u.html" data-id="cjii399xo000dyts6qvltqqrh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mine/">Mine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sshgithub" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/sshgithub.html" class="article-date">
+  <time datetime="2018-06-10T20:09:38.000Z" itemprop="datePublished">2018-06-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Github/">Github</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/sshgithub.html">Git 通过 SSH 上传到 Github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>之前我一直都在用<code>Git</code>的<code>https</code>方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有<code>SSH</code>方式的，方便多啦!</p>
+</blockquote>
+<hr>
+<h1 id="下载-OPEN-SSH"><a href="#下载-OPEN-SSH" class="headerlink" title="下载 OPEN SSH"></a>下载 <code>OPEN SSH</code></h1><ol>
+<li>首先，在终端里输入<code>apt install openssh</code><ul>
+<li>等待安装完成</li>
+</ul>
+</li>
+<li>在终端中输入<code>ssh-keygen -t rsa</code><ul>
+<li>等待密匙生成后</li>
+</ul>
+</li>
+<li>在终端中输入<code>cat ~/.ssh/id_rsa.pub</code><blockquote>
+<p>此文章未完成</p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/sshgithub.html" data-id="cjii399x7000ayts6l6ytotuq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deploy/">Deploy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-music" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/music.html" class="article-date">
+  <time datetime="2018-06-06T10:58:47.000Z" itemprop="datePublished">2018-06-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/音乐推荐/">音乐推荐</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/music.html">音乐推荐 I&#39;ll Get By</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="这首歌今天一听，听上瘾了。"><a href="#这首歌今天一听，听上瘾了。" class="headerlink" title="这首歌今天一听，听上瘾了。"></a>这首歌今天一听，听上瘾了。</h3><hr>
+
+        <div id="aplayer-GkbXMdiA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-GkbXMdiA"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "I'll Get By",
+              author: "B.Reith",
+              url: "https://file.mxpkx.com/dl/B.Reith - I'll Get By.mp3",
+              pic: "https://file.mxpkx.com/dl/1706938418.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/music.html" data-id="cjii399vj0005yts65oypalak" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/节奏/">节奏</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/音乐/">音乐</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/Linux.html" class="article-date">
+  <time datetime="2018-04-21T03:30:37.000Z" itemprop="datePublished">2018-04-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/Linux.html">Linux删除指令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Linux删除指令的方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -Rf 文件名 <span class="comment">#删除文件夹和文件夹里的所以内容</span></span><br><span class="line">rm  文件* <span class="comment">#删除文件名里有"文件"两个字的文件</span></span><br><span class="line">rm 文件[01-04] <span class="comment">#删除"文件01,文件02,文件03,文件04"</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/Linux.html" data-id="cjii399sq0000yts6sqpbej68" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-good_image" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/good_image.html" class="article-date">
+  <time datetime="2018-04-20T15:19:35.000Z" itemprop="datePublished">2018-04-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/壁纸推荐/">壁纸推荐</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/good_image.html">壁纸推荐</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天有人问我壁纸，我就推荐一下，长按保存即可<br>No.1<br><img src="/archives/good_image/0cc67e3926a921d7649f34b13b51b8d3.jpg" alt="1"><br>No.2<br><img src="/archives/good_image/1e6827b4f7be1a25c4de84f606c541bd.jpg" alt="2"><br>No.3<br><img src="/archives/good_image/562393a743d1cbf127267ca163fbcb95.jpg" alt="3"><br>No.4<br><img src="/archives/good_image/dde1e958b23239685027a5dcd2cc9baa.jpg" alt="4"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/good_image.html" data-id="cjii399u70002yts6uxt0jwdz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/壁纸/">壁纸</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-phoneLinuxsystem" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/phoneLinuxsystem.html" class="article-date">
+  <time datetime="2018-04-20T02:30:56.000Z" itemprop="datePublished">2018-04-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/IT/">IT</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/phoneLinuxsystem.html">手机安装Linux系统</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本教程需要 Root 权限，没有Root权限的就不要看了。<br>         大家都知道 Android 是由 Linux 来的，那么问题来了，Android 怎样安装 Linux 呢？下面我来跟大家讲讲。<br>         首先我们下载 <a href="https://down.shouji.com.cn/wap/down/app/package?package=ru.meefik.linuxdeploy" target="_blank" rel="noopener">Linux Deploy</a> 安装之后，可以看到这个界面:<br><img src="/archives/phoneLinuxsystem/linux.jpg" alt="linux_deploy"></p>
+<p>本教程未完成!!!!!!!!!!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/phoneLinuxsystem.html" data-id="cjii399wm0008yts69lfsma74" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安卓拓展/">安卓拓展</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/壁纸推荐/">壁纸推荐</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/音乐推荐/">音乐推荐</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deploy/">Deploy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mine/">Mine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/壁纸/">壁纸</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安卓拓展/">安卓拓展</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/节奏/">节奏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/音乐/">音乐</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Deploy/" style="font-size: 10px;">Deploy</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Mine/" style="font-size: 10px;">Mine</a> <a href="/tags/壁纸/" style="font-size: 10px;">壁纸</a> <a href="/tags/安卓拓展/" style="font-size: 10px;">安卓拓展</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/节奏/" style="font-size: 10px;">节奏</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/archives/u.html">自言自语</a>
+          </li>
+        
+          <li>
+            <a href="/archives/sshgithub.html">Git 通过 SSH 上传到 Github</a>
+          </li>
+        
+          <li>
+            <a href="/archives/music.html">音乐推荐 I&#39;ll Get By</a>
+          </li>
+        
+          <li>
+            <a href="/archives/Linux.html">Linux删除指令</a>
+          </li>
+        
+          <li>
+            <a href="/archives/good_image.html">壁纸推荐</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 RioHsc<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

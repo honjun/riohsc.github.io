@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[自言自语]]></title>
+    <url>%2Farchives%2Fu.html</url>
+    <content type="text"><![CDATA[function doDecrypt (pwd, onError) { console.log('in doDecrypt'); const txt = document.getElementById('enc_content').innerHTML; let plantext; try { const bytes = CryptoJS.AES.decrypt(txt, pwd); var plaintext = bytes.toString(CryptoJS.enc.Utf8); } catch(err) { if(onError) { onError(err); } return; } document.getElementById('enc_content').innerHTML = plaintext; document.getElementById('enc_content').style.display = 'block'; document.getElementById('enc_passwd').style.display = 'none'; if(typeof MathJax !== 'undefined') { MathJax.Hub.Queue( ['resetEquationNumbers', MathJax.InputJax.TeX], ['PreProcess', MathJax.Hub], ['Reprocess', MathJax.Hub] ); } } U2FsdGVkX1/PYIXeLuLKYCXgX71iD1A8INR14EyU9I7eK/puE5JZ7qB5Y519Dk3lZtBsFEdXiqe2D8W/fmR6XxXK96cvcSWwuNi1JVRqXgnbCUNPFKWD/ucD3H6uNrz5elu2lhUnm4txF5dxnSIrfgRqkY4iQ5J8xmYPR/Wg3AkUykUIl48CQ/3AtbZoWlLWWlYeP0Wg0Yli7jzeMD4FJezM3S6IEO3zCqMTyqasLmmuePAIXCxnd0e1cVlaiNs3soakPLR/JfOBmFQ9tWn63Mlz2Ur94edUnBs7l+T7doHkcf0k8efxOmg3OSFFHpdJ/iEPZB6lGC8LxhOaGBY89g== var onError = function(error) { document.getElementById("enc_error").innerHTML = "密码错误!" }; function decrypt() { var passwd = document.getElementById("enc_pwd_input").value; console.log(passwd); doDecrypt(passwd, onError); }]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>Mine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git 通过 SSH 上传到 Github]]></title>
+    <url>%2Farchives%2Fsshgithub.html</url>
+    <content type="text"><![CDATA[之前我一直都在用Git的https方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有SSH方式的，方便多啦! 下载 OPEN SSH 首先，在终端里输入apt install openssh 等待安装完成 在终端中输入ssh-keygen -t rsa 等待密匙生成后 在终端中输入cat ~/.ssh/id_rsa.pub 此文章未完成]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Github</tag>
+        <tag>Deploy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[音乐推荐 I'll Get By]]></title>
+    <url>%2Farchives%2Fmusic.html</url>
+    <content type="text"><![CDATA[这首歌今天一听，听上瘾了。 var ap = new APlayer({ element: document.getElementById("aplayer-GkbXMdiA"), narrow: false, autoplay: true, showlrc: false, music: { title: "I'll Get By", author: "B.Reith", url: "https://file.mxpkx.com/dl/B.Reith - I'll Get By.mp3", pic: "https://file.mxpkx.com/dl/1706938418.jpg", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+      <categories>
+        <category>音乐推荐</category>
+      </categories>
+      <tags>
+        <tag>音乐</tag>
+        <tag>节奏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux删除指令]]></title>
+    <url>%2Farchives%2FLinux.html</url>
+    <content type="text"><![CDATA[Linux删除指令的方法123rm -Rf 文件名 #删除文件夹和文件夹里的所以内容rm 文件* #删除文件名里有"文件"两个字的文件rm 文件[01-04] #删除"文件01,文件02,文件03,文件04"]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[壁纸推荐]]></title>
+    <url>%2Farchives%2Fgood_image.html</url>
+    <content type="text"><![CDATA[今天有人问我壁纸，我就推荐一下，长按保存即可No.1No.2No.3No.4]]></content>
+      <categories>
+        <category>壁纸推荐</category>
+      </categories>
+      <tags>
+        <tag>壁纸</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[手机安装Linux系统]]></title>
+    <url>%2Farchives%2FphoneLinuxsystem.html</url>
+    <content type="text"><![CDATA[本教程需要 Root 权限，没有Root权限的就不要看了。 大家都知道 Android 是由 Linux 来的，那么问题来了，Android 怎样安装 Linux 呢？下面我来跟大家讲讲。 首先我们下载 Linux Deploy 安装之后，可以看到这个界面: 本教程未完成!!!!!!!!!!]]></content>
+      <categories>
+        <category>IT</category>
+      </categories>
+      <tags>
+        <tag>安卓拓展</tag>
+      </tags>
+  </entry>
+</search>

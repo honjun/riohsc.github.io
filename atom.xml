@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RioHsc</title>
+  
+  <subtitle>Sharing technology</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://riohsc.github.io/"/>
+  <updated>2018-06-11T17:43:37.515Z</updated>
+  <id>https://riohsc.github.io/</id>
+  
+  <author>
+    <name>RioHsc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自言自语</title>
+    <link href="https://riohsc.github.io/archives/u.html"/>
+    <id>https://riohsc.github.io/archives/u.html</id>
+    <published>2018-06-11T16:40:06.000Z</published>
+    <updated>2018-06-11T17:43:37.515Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script src=/js/crypto-js.js></script><script>function doDecrypt (pwd, onError) {console.log('in doDecrypt');const txt = document.getElementById('enc_content').innerHTML;let plantext;try {const bytes = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);} catch(err) {if(onError) {onError(err);}return;}document.getElementById('enc_content').innerHTML = plaintext;document.getElementById('enc_content').style.display = 'block';document.getElementById('enc_passwd').style.display = 'none';if(typeof MathJax !== 'undefined') {MathJax.Hub.Queue(['resetEquationNumbers', MathJax.InputJax.TeX],['PreProcess', MathJax.Hub],['Reprocess', MathJax.Hub]);}}</script><div id="enc_content" style="display:none">U2FsdGVkX1/PYIXeLuLKYCXgX71iD1A8INR14EyU9I7eK/puE5JZ7qB5Y519Dk3lZtBsFEdXiqe2D8W/fmR6XxXK96cvcSWwuNi1JVRqXgnbCUNPFKWD/ucD3H6uNrz5elu2lhUnm4txF5dxnSIrfgRqkY4iQ5J8xmYPR/Wg3AkUykUIl48CQ/3AtbZoWlLWWlYeP0Wg0Yli7jzeMD4FJezM3S6IEO3zCqMTyqasLmmuePAIXCxnd0e1cVlaiNs3soakPLR/JfOBmFQ9tWn63Mlz2Ur94edUnBs7l+T7doHkcf0k8efxOmg3OSFFHpdJ/iEPZB6lGC8LxhOaGBY89g==</div><div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="查&nbsp;看" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #2E7D32;margin-left: 10px"></div><script>var onError = function(error) {document.getElementById("enc_error").innerHTML = "密码错误!"};function decrypt() {var passwd = document.getElementById("enc_pwd_input").value;console.log(passwd);doDecrypt(passwd, onError);}</script></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="日常" scheme="https://riohsc.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="日常" scheme="https://riohsc.github.io/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+      <category term="Mine" scheme="https://riohsc.github.io/tags/Mine/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 通过 SSH 上传到 Github</title>
+    <link href="https://riohsc.github.io/archives/sshgithub.html"/>
+    <id>https://riohsc.github.io/archives/sshgithub.html</id>
+    <published>2018-06-10T20:09:38.000Z</published>
+    <updated>2018-06-12T05:42:54.626Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>之前我一直都在用<code>Git</code>的<code>https</code>方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有<code>SSH</code>方式的，方便多啦!</p></blockquote><hr><h1 id="下载-OPEN-SSH"><a href="#下载-OPEN-SSH" class="headerlink" title="下载 OPEN SSH"></a>下载 <code>OPEN SSH</code></h1><ol><li>首先，在终端里输入<code>apt install openssh</code><ul><li>等待安装完成</li></ul></li><li>在终端中输入<code>ssh-keygen -t rsa</code><ul><li>等待密匙生成后</li></ul></li><li>在终端中输入<code>cat ~/.ssh/id_rsa.pub</code><blockquote><p>此文章未完成</p></blockquote></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="Github" scheme="https://riohsc.github.io/categories/Github/"/>
+    
+    
+      <category term="Git" scheme="https://riohsc.github.io/tags/Git/"/>
+    
+      <category term="Github" scheme="https://riohsc.github.io/tags/Github/"/>
+    
+      <category term="Deploy" scheme="https://riohsc.github.io/tags/Deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>音乐推荐 I&#39;ll Get By</title>
+    <link href="https://riohsc.github.io/archives/music.html"/>
+    <id>https://riohsc.github.io/archives/music.html</id>
+    <published>2018-06-06T10:58:47.000Z</published>
+    <updated>2018-06-11T16:35:57.536Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="这首歌今天一听，听上瘾了。"><a href="#这首歌今天一听，听上瘾了。" class="headerlink" title="这首歌今天一听，听上瘾了。"></a>这首歌今天一听，听上瘾了。</h3><hr>        <div id="aplayer-GkbXMdiA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-GkbXMdiA"),            narrow: false,            autoplay: true,            showlrc: false,            music: {              title: "I'll Get By",              author: "B.Reith",              url: "https://file.mxpkx.com/dl/B.Reith - I'll Get By.mp3",              pic: "https://file.mxpkx.com/dl/1706938418.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    
+    <summary type="html">
+    
+      My life
+    
+    </summary>
+    
+      <category term="音乐推荐" scheme="https://riohsc.github.io/categories/%E9%9F%B3%E4%B9%90%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="音乐" scheme="https://riohsc.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="节奏" scheme="https://riohsc.github.io/tags/%E8%8A%82%E5%A5%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux删除指令</title>
+    <link href="https://riohsc.github.io/archives/Linux.html"/>
+    <id>https://riohsc.github.io/archives/Linux.html</id>
+    <published>2018-04-21T03:30:37.000Z</published>
+    <updated>2018-06-11T16:36:07.166Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Linux删除指令的方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -Rf 文件名 <span class="comment">#删除文件夹和文件夹里的所以内容</span></span><br><span class="line">rm  文件* <span class="comment">#删除文件名里有"文件"两个字的文件</span></span><br><span class="line">rm 文件[01-04] <span class="comment">#删除"文件01,文件02,文件03,文件04"</span></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      Linux
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://riohsc.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>壁纸推荐</title>
+    <link href="https://riohsc.github.io/archives/good_image.html"/>
+    <id>https://riohsc.github.io/archives/good_image.html</id>
+    <published>2018-04-20T15:19:35.000Z</published>
+    <updated>2018-06-11T16:36:14.609Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>今天有人问我壁纸，我就推荐一下，长按保存即可<br>No.1<br><img src="/archives/good_image/0cc67e3926a921d7649f34b13b51b8d3.jpg" alt="1"><br>No.2<br><img src="/archives/good_image/1e6827b4f7be1a25c4de84f606c541bd.jpg" alt="2"><br>No.3<br><img src="/archives/good_image/562393a743d1cbf127267ca163fbcb95.jpg" alt="3"><br>No.4<br><img src="/archives/good_image/dde1e958b23239685027a5dcd2cc9baa.jpg" alt="4"></p>]]></content>
+    
+    <summary type="html">
+    
+      分享壁纸
+    
+    </summary>
+    
+      <category term="壁纸推荐" scheme="https://riohsc.github.io/categories/%E5%A3%81%E7%BA%B8%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="壁纸" scheme="https://riohsc.github.io/tags/%E5%A3%81%E7%BA%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手机安装Linux系统</title>
+    <link href="https://riohsc.github.io/archives/phoneLinuxsystem.html"/>
+    <id>https://riohsc.github.io/archives/phoneLinuxsystem.html</id>
+    <published>2018-04-20T02:30:56.000Z</published>
+    <updated>2018-06-11T16:35:49.349Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>本教程需要 Root 权限，没有Root权限的就不要看了。<br>         大家都知道 Android 是由 Linux 来的，那么问题来了，Android 怎样安装 Linux 呢？下面我来跟大家讲讲。<br>         首先我们下载 <a href="https://down.shouji.com.cn/wap/down/app/package?package=ru.meefik.linuxdeploy" target="_blank" rel="noopener">Linux Deploy</a> 安装之后，可以看到这个界面:<br><img src="/archives/phoneLinuxsystem/linux.jpg" alt="linux_deploy"></p><p>本教程未完成!!!!!!!!!!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="IT" scheme="https://riohsc.github.io/categories/IT/"/>
+    
+    
+      <category term="安卓拓展" scheme="https://riohsc.github.io/tags/%E5%AE%89%E5%8D%93%E6%8B%93%E5%B1%95/"/>
+    
+  </entry>
+  
+</feed>

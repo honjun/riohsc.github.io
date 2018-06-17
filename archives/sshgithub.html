@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Git 通过 SSH 上传到 Github | RioHsc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="之前我一直都在用Git的https方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有SSH方式的，方便多啦!   下载 OPEN SSH 首先，在终端里输入apt install openssh 等待安装完成   在终端中输入ssh-keygen -t rsa 等待密匙生成后   在终端中输入cat ~/.ssh/id_rsa.pub 此文章未完成">
+<meta name="keywords" content="Git,Github,Deploy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 通过 SSH 上传到 Github">
+<meta property="og:url" content="https://riohsc.github.io/archives/sshgithub.html">
+<meta property="og:site_name" content="RioHsc">
+<meta property="og:description" content="之前我一直都在用Git的https方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有SSH方式的，方便多啦!   下载 OPEN SSH 首先，在终端里输入apt install openssh 等待安装完成   在终端中输入ssh-keygen -t rsa 等待密匙生成后   在终端中输入cat ~/.ssh/id_rsa.pub 此文章未完成">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-12T05:42:54.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git 通过 SSH 上传到 Github">
+<meta name="twitter:description" content="之前我一直都在用Git的https方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有SSH方式的，方便多啦!   下载 OPEN SSH 首先，在终端里输入apt install openssh 等待安装完成   在终端中输入ssh-keygen -t rsa 等待密匙生成后   在终端中输入cat ~/.ssh/id_rsa.pub 此文章未完成">
+  
+    <link rel="alternate" href="/atom.xml" title="RioHsc" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">RioHsc</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Sharing technology</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://riohsc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-sshgithub" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/archives/sshgithub.html" class="article-date">
+  <time datetime="2018-06-10T20:09:38.000Z" itemprop="datePublished">2018-06-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Github/">Github</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Git 通过 SSH 上传到 Github
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>之前我一直都在用<code>Git</code>的<code>https</code>方式部署项目，每次都要输密码，都不懂我是怎么过来的，今天才发现还有<code>SSH</code>方式的，方便多啦!</p>
+</blockquote>
+<hr>
+<h1 id="下载-OPEN-SSH"><a href="#下载-OPEN-SSH" class="headerlink" title="下载 OPEN SSH"></a>下载 <code>OPEN SSH</code></h1><ol>
+<li>首先，在终端里输入<code>apt install openssh</code><ul>
+<li>等待安装完成</li>
+</ul>
+</li>
+<li>在终端中输入<code>ssh-keygen -t rsa</code><ul>
+<li>等待密匙生成后</li>
+</ul>
+</li>
+<li>在终端中输入<code>cat ~/.ssh/id_rsa.pub</code><blockquote>
+<p>此文章未完成</p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://riohsc.github.io/archives/sshgithub.html" data-id="cjii399x7000ayts6l6ytotuq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deploy/">Deploy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/archives/u.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          自言自语
+        
+      </div>
+    </a>
+  
+  
+    <a href="/archives/music.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">音乐推荐 I&#39;ll Get By</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Github/">Github</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/壁纸推荐/">壁纸推荐</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/日常/">日常</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/音乐推荐/">音乐推荐</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deploy/">Deploy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mine/">Mine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/壁纸/">壁纸</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安卓拓展/">安卓拓展</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/节奏/">节奏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/音乐/">音乐</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Deploy/" style="font-size: 10px;">Deploy</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Mine/" style="font-size: 10px;">Mine</a> <a href="/tags/壁纸/" style="font-size: 10px;">壁纸</a> <a href="/tags/安卓拓展/" style="font-size: 10px;">安卓拓展</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/节奏/" style="font-size: 10px;">节奏</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/archives/u.html">自言自语</a>
+          </li>
+        
+          <li>
+            <a href="/archives/sshgithub.html">Git 通过 SSH 上传到 Github</a>
+          </li>
+        
+          <li>
+            <a href="/archives/music.html">音乐推荐 I&#39;ll Get By</a>
+          </li>
+        
+          <li>
+            <a href="/archives/Linux.html">Linux删除指令</a>
+          </li>
+        
+          <li>
+            <a href="/archives/good_image.html">壁纸推荐</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 RioHsc<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
